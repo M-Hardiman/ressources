@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2024-10-03 Thu 17:41 -->
+<!-- 2024-10-04 Fri 13:56 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Division polynômial</title>
@@ -78,15 +78,15 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgac5c4e7">1. Introduction</a></li>
-<li><a href="#orgf018aef">2. Le schéma d'Horner</a></li>
+<li><a href="#orgecd8263">1. Introduction</a></li>
+<li><a href="#org4de7c22">2. Le schéma d'Horner</a></li>
+<li><a href="#org297ac26">3. Le schéma d'Horner pour factoriser</a></li>
 </ul>
 </div>
 </div>
 
-
-<div id="outline-container-orgac5c4e7" class="outline-2">
-<h2 id="orgac5c4e7"><span class="section-number-2">1.</span> Introduction</h2>
+<div id="outline-container-orgecd8263" class="outline-2">
+<h2 id="orgecd8263"><span class="section-number-2">1.</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 On étudie en arithmétique la division des nombres entiers avec reste. Soit \(D\) et \(d\) (\(d \neq 0\)) deux nombres entiers; il existe exactement deux nombres entiers \(q\) et \(r\) tels que :<br>
@@ -105,7 +105,7 @@ Exemples :<br>
 On peut définir de la même manière la division (<i>euclidienne</i> ou <i>avec reste</i>) des polynômes. Elle est basée sur le théorème fondamental que nous admettrons sans démonstration:<br>
 </p>
 
-<div class="THM" id="org0d3625d">
+<div class="THM" id="orgfbb27bd">
 <p>
 <b>Théorème.</b> Soit \(D\) et \(d\) deux polynômes à une variable (\(d \neq 0\)). Il existe exactement deux polynômes \(q\) et \(r\) tels que :<br>
 \[D = dq + r, \text{ avec } \deg(r) \lt \deg(d).\]<br>
@@ -134,8 +134,8 @@ C'est la <i>division polynomiale</i>.<br>
 </div>
 </div>
 
-<div id="outline-container-orgf018aef" class="outline-2">
-<h2 id="orgf018aef"><span class="section-number-2">2.</span> Le schéma d'Horner</h2>
+<div id="outline-container-org4de7c22" class="outline-2">
+<h2 id="org4de7c22"><span class="section-number-2">2.</span> Le schéma d'Horner</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Il existe une autre disposition pratique des calculs dans le cas de la division par un binôme unitaire du premier degré : <b>le schéma de Horner</b>. Il s'agit d'un calcul avec uniquement les coefficients du polynôme.<br>
@@ -150,12 +150,70 @@ Il existe une autre disposition pratique des calculs dans le cas de la division 
 <a href="Exo-horner.png">Exercice Horner</a><br>
 <a href="Sol-horner.png">Solutions</a><br>
 </p>
+
+<p>
+Étonnamment, la méthode d'Horner pour diviser les polynômes permet également de les <b>évaluer</b> (c'est-à-dire de calculer la valeur que l'on obtient en remplaçant la variable par un nombre).<br>
+</p>
+
+<p>
+En effet, le reste de la division d'un polynôme \(P\) par \((x-a)\) est la valeur de \(P\) qu'on obtient en substituant \(a\) pour \(x\).<br>
+</p>
+
+<p>
+Par exemple,<br>
+\[3x^4-8x^3+10x+5 = (x-\textcolor{red}{2})(3x^3-2x^2-4x+2) + \textcolor{green}{9}\]<br>
+hors,<br>
+\[3(\textcolor{red}{2})^4 - 8(\textcolor{red}{2})^3 + 10(\textcolor{red}{2})+5 = \textcolor{green}{9}.\]<br>
+Pourquoi ? Cela devient clair lorsque l'on remplace \(x\) par \(2\) du côté droit de l'égalité de la division :<br>
+\[\underbrace{\overbrace{(\textcolor{red}{2}-\textcolor{red}{2})}^0(3(\textcolor{red}{2})^3-2(\textcolor{red}{2})^2-4(\textcolor{red}{2})+2)}_{0} + \textcolor{green}{9} = \textcolor{green}{9}.\]<br>
+<b>Remarque.</b> Il est souvent plus facile d'effectuer la division et de vérifier le reste que de substituer la variable et de calculer !<br>
+</p>
+
+<p>
+<b>Exercice.</b>  Vérifiez dans <a href="Exo-horner.png">cet exercice</a> que le reste de la division par \((x-a)\) donne la même réponse que l'évaluation de \(P\) en \(a\). Quelle méthode trouvez-vous plus facile pour trouver cette réponse ?<br>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org297ac26" class="outline-2">
+<h2 id="org297ac26"><span class="section-number-2">3.</span> Le schéma d'Horner pour factoriser</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Notre remarque précédente conduit à une conséquence pragmatique : lorsque nous identifions une solution \(x_0\) de l'équation \(P = 0\) pour un polynôme \(P\), nous pouvons affirmer que \(P\) est divisible par \((x - x_0)\). En effet, la division de \(P\) par \((x - x_0)\) s'effectue sans reste.<br>
+Cette propriété nous permet d'obtenir une factorisation de \(P\) en effectuant simplement cette division.<br>
+</p>
+
+<p>
+<b>Exemple.</b> Considérons l'équation<br>
+\[x^3 − 2x^2 − 11x + 12= 0. \]<br>
+On devine la solution \(x = 1\). Nous essayons donc de diviser par \((x-1)\):<br>
+</p>
+
+<div id="org56740d7" class="figure">
+<p><img src="ex-horner-division.png" alt="ex-horner-division.png" style="width:400px;"><br>
+</p>
+</div>
+
+<p>
+Nous avons donc<br>
+\[x^3 − 2x^2 − 11x + 12 = (x^2-x-12)(x-1) = (x+3)(x-4)(x-1),\]<br>
+et nous voyons que les solutions de l'équation originale sont \(-3\), \(4\) et \(1\). \(S = \{1;4;-3\}\)<br>
+</p>
+
+<p>
+<b>Remarque.</b> Mais comment devinons-nous la solution originale ? On peut souvent s'appuyer sur le «principe des suspects habituels». Lorsqu'on est confronté à un polynôme \(P\) à une seule variable de degré supérieur à \(2\), pour lequel on ne voit aucune autre méthode de factorisation, il est judicieux de tester les «suspects habituels» : \(1\), \(-1\), \(2\), \(-2\), \(3, \dots\) Rappelez-vous, il est plus facile de diviser \(P\) par \((x-a)\) (en utilisant le schéma de Horner) que de calculer directement \(P\) évalué en \(a\). Si vous obtenez un reste de \(0\), alors vous avez trouvé une factorisation !<br>
+</p>
+
+<p>
+<a href="exo-horner-div.png">Exercices</a><br>
+<a href="Sol-exo-horner-div.png">Solutions</a><br>
+</p>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: hardiman</p>
-<p class="date">Created: 2024-10-03 Thu 17:41</p>
+<p class="date">Created: 2024-10-04 Fri 13:56</p>
 </div>
 </body>
 </html>
