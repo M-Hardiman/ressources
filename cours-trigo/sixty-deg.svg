@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -5 200 115">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+    refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+  
+  <!-- Angle lines -->
+  <line x1="10" y1="100" x2="110" y2="100" stroke="black" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="10" y1="100" x2="60" y2="13.4" stroke="black" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arc -->
+  <path d="M 40 100 A 30 30 0 0 0 24 74" fill="none" stroke="black" stroke-width="2"/>
+  
+  <!-- Text -->
+  <text x="40" y="85" font-family="Arial" font-size="16">60°</text>
+</svg>

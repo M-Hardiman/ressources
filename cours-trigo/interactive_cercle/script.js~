@@ -1,0 +1,51 @@
+// Convert degrees to radians and format the result
+function degreesToRadians(degrees) {
+    const radians = degrees * Math.PI / 180;
+    // Format as fraction of π where possible
+    if (degrees === 0) return "0";
+    if (degrees === 180) return "π";
+    if (degrees === 90) return "π/2";
+    if (degrees === 270) return "3π/2";
+    if (degrees === 45) return "π/4";
+    if (degrees === 135) return "3π/4";
+    if (degrees === 225) return "5π/4";
+    if (degrees === 315) return "7π/4";
+    if (degrees === 30) return "π/6";
+    if (degrees === 150) return "5π/6";
+    if (degrees === 210) return "7π/6";
+    if (degrees === 330) return "11π/6";
+    if (degrees === 60) return "π/3";
+    if (degrees === 120) return "2π/3";
+    if (degrees === 240) return "4π/3";
+    if (degrees === 300) return "5π/3";
+    
+    // For any other value, return decimal form
+    return radians.toFixed(2);
+}
+
+// Keep track of which labels are showing radians
+const radianStates = new Set();
+
+// Function to initialize click handlers
+function initializeClickHandlers() {
+    document.querySelectorAll('.angle-labels text').forEach(text => {
+        text.addEventListener('click', function() {
+            const degrees = parseInt(this.getAttribute('data-angle'));
+            
+            if (radianStates.has(degrees)) {
+                // Switch back to degrees
+                this.textContent = `${degrees}°`;
+                radianStates.delete(degrees);
+            } else {
+                // Switch to radians
+                const radians = degreesToRadians(degrees);
+                this.textContent = radians.includes('π') ? radians : `${radians}rad`;
+                radianStates.add(degrees);
+            }
+        });
+    });
+}
+
+// Initialize the click handlers once the SVG is loaded
+// We use a small delay to ensure the SVG is fully loaded and processed
+setTimeout(initializeClickHandlers, 100);

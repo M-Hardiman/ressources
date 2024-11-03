@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 100">
+  <!-- Main horizontal line -->
+  <line x1="50" y1="50" x2="540" y2="50" stroke="black" stroke-width="2"/>
+  
+  <!-- Tick marks -->
+  <line x1="133" y1="45" x2="133" y2="55" stroke="black" stroke-width="2"/>
+  <line x1="216" y1="45" x2="216" y2="55" stroke="black" stroke-width="2"/>
+  <line x1="300" y1="45" x2="300" y2="55" stroke="black" stroke-width="2"/>
+  <line x1="383" y1="45" x2="383" y2="55" stroke="black" stroke-width="2"/>
+  <line x1="466" y1="45" x2="466" y2="55" stroke="black" stroke-width="2"/>
+  
+  <!-- Labels -->
+  <text x="50" y="70" text-anchor="middle" font-size="14">-3</text>
+  <text x="133" y="70" text-anchor="middle" font-size="14">-2</text>
+  <text x="216" y="70" text-anchor="middle" font-size="14">-1</text>
+  <text x="300" y="70" text-anchor="middle" font-size="14">0</text>
+  <text x="383" y="70" text-anchor="middle" font-size="14">1</text>
+  <text x="466" y="70" text-anchor="middle" font-size="14">2</text>
+  <text x="550" y="70" text-anchor="middle" font-size="14">3</text>
+  
+  <!-- Ellipses on the left -->
+  <text x="20" y="55" font-size="24">...</text>
+  
+  <!-- Arrow at the right end -->
+  <polygon points="550,50 540,45 540,55" fill="black"/>
+</svg>

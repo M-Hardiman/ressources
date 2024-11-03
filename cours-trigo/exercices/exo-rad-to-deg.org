@@ -1,0 +1,24 @@
+#+SETUPFILE: ./my-readtheorg.setup
+#+HTML_HEAD: <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../math-blog.css"/>
+
+
+* Exercice
+
+Convertir en degrés les angles donnés par leur mesure en radians (donner les réponses arrondies au centième) :
+
+$$\begin{array}{llll}
+a)\quad \frac{\pi}{6} & b)\quad \frac{2\pi}{3} & c)\quad \frac{\pi}{10} & d)\quad 4\pi \\
+e)\quad \frac{5\pi}{6} & f)\quad \frac{15\pi}{4} & g)\quad 3 & h)\quad \frac{\pi}{12} \\
+i)\quad \frac{2}{3} & j)\quad 0.7
+\end{array}$$
+
+* Exercice
+
+Convertir en radians les angles donnés par leur mesure en degrés (donner les réponses en fractions de $\pi$ ou arrondies au centième): 
+
+$$\begin{array}{llll}
+a)\quad 45^{o} & b)\quad 60^{o} & c)\quad 75^{o} & d)\quad 30^{o} \\
+e)\quad 120^{o} & f)\quad 315^{o} & g)\quad 22.7^{o} & h)\quad 107.9^{o} \\
+i)\quad 292.3^{o} & j)\quad 152.5^{o}
+\end{array}$$

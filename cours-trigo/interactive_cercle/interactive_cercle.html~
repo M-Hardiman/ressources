@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interactive Trigonometric Circle</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$','$']]},
+          messageStyle: "none"
+      });
+    </script>
+    <style>
+      html {
+	  filter: invert(100%);
+      }
+
+      .container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          margin: 0;
+          background-color: #f0f0f0;
+      }
+      svg {
+          background-color: white;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+      text {
+          cursor: pointer;
+          user-select: none;
+      }
+      text:hover {
+          fill: #0066cc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="svg-container"></div>
+    <script>
+      // Load and inject the SVG
+      fetch('circle.svg')
+    .then(response => response.text())
+    .then(svgContent => {
+        document.getElementById('svg-container').innerHTML = svgContent;
+        // Load the script after SVG is loaded to ensure elements exist
+        const script = document.createElement('script');
+        script.src = 'script.js';
+        document.body.appendChild(script);
+    });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+#+SETUPFILE: /home/hardiman/Documents/org-html-themes/org/theme-readtheorg.setup
+#+HTML_HEAD: <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../math-blog.css"/>
+
+* Exercice
+
+$$\begin{array}{llll}
+a)\quad 30^{o} & b)\quad 120^{o} & c)\quad 18^{o} & d)\quad 720^{o} \\
+e)\quad 150^{o} & f)\quad 675^{o} & g)\quad 171.89^{o} & h)\quad 15^{o} \\
+i)\quad 38.20^{o} & j)\quad 40.11^{o}
+\end{array}$$
+
+* Exercice
+
+$$\begin{array}{llll}
+a)\quad \dfrac{\pi}{4} & b)\quad \dfrac{\pi}{3} & c)\quad \dfrac{5\pi}{12} & d)\quad \dfrac{\pi}{6} \\
+e)\quad \dfrac{2\pi}{3} & f)\quad \dfrac{7\pi}{4} & g)\quad \dfrac{227\pi}{1800}\ (\approx 0.40) & h)\quad \dfrac{1079\pi}{1800}\ (\approx 1.88) \\
+i)\quad \dfrac{2923\pi}{1800}\ (\approx 5.10) & j)\quad \dfrac{61\pi}{72}\ (\approx 2.66)
+\end{array}$$

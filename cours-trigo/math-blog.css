@@ -1,0 +1,152 @@
+body {
+    font-family: "Hack", "CMU Serif", monospace !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Hack", "CMU Serif", monospace !important;
+        color: brown;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+a, a:visited {
+  color: blue;
+}
+
+#content {
+    max-width: 1250px;
+    padding-bottom: 800px;
+    font-size: 20px;
+}
+
+html body {
+  font-size: 100%;
+}
+
+#content p {
+    font-size: 100%;
+    line-height: 1.3; 
+}
+
+#postamble {
+    border-top-color: transparent;
+    padding-bottom: 20px;
+}
+
+html {
+    filter: invert(100%);
+}
+
+.THM { 
+    padding: 10px 13px;
+    border: 3px solid green;/* Modify main content and body scrollbar */
+    
+body, .content {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* For Webkit browsers like Chrome and Safari */
+body::-webkit-scrollbar, .content::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track, .content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb, .content::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+    padding-bottom: 0em;
+    margin-bottom: 1em;
+}
+
+#table-of-contents {
+  overflow: visible !important;
+  max-height: none !important;
+}
+
+img {
+    max-width: 800px !important;
+  height: auto;
+}
+
+
+/* Modify main content and body scrollbar */
+body, .content {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* For Webkit browsers like Chrome and Safari */
+body::-webkit-scrollbar, .content::-webkit-scrollbar {
+  width: 0px;
+}
+
+body::-webkit-scrollbar-track, .content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb, .content::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+
+/* Increase spacing between paragraphs in the main content */
+#content > .outline-2 p {
+  margin-bottom: 1.2em;  /* Adjust this value to increase or decrease spacing */
+}
+
+/* Ensure list items have consistent spacing */
+#content > .outline-2 li {
+  margin-bottom: 1em;  /* Adjust as needed */
+}
+
+/* Add more vertical space between text attached to list items */
+#content > .outline-2 li p {
+  margin-top: 1em;     /* Space above attached paragraphs */
+  margin-bottom: 1em;  /* Space below attached paragraphs */
+}
+
+/* Add space after br tags within list items */
+#content > .outline-2 li br {
+  content: "";
+  display: block;
+  margin-bottom: 1em;  /* Adjust this value as needed */
+}
+
+/* Prevent changes to table of contents spacing */
+#table-of-contents p,
+#table-of-contents li,
+#table-of-contents li p,
+#table-of-contents li br {
+  margin: initial;
+}
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Change background color of table of contents header */
+#table-of-contents h2 {
+  background-color: black;  /* Light gray background */
+  padding: 10px;  /* Add some padding for better appearance */
+  border-radius: 5px;  /* Optional: rounds the corners */
+}
+

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -100 500 200">
+  <!-- Left Circle -->
+  <g transform="translate(0, 0)">
+    <!-- Coordinate axes -->
+    <line x1="-100" y1="0" x2="100" y2="0" stroke="gray" stroke-width="1"/>
+    <line x1="0" y1="-100" x2="0" y2="100" stroke="gray" stroke-width="1"/>
+    <!-- Circle centered at origin -->
+    <circle cx="0" cy="0" r="80" fill="none" stroke="black" stroke-width="2"/>
+    
+    <!-- Blue arc from 0 degrees to red dot -->
+    <path d="M 80 0 A 80 80 0 0 0 -56.57 -56.57" fill="none" stroke="blue" stroke-width="4"/>
+    
+    <!-- Red dot on the circle in second quadrant -->
+    <circle cx="-56.57" cy="-56.57" r="5" fill="red"/>
+    
+    <!-- Green dot on the right at 0 degree angle -->
+    <circle cx="80" cy="0" r="5" fill="green"/>
+    
+    <!-- Arc length label -->
+    <text x="50" y="-75" font-family="Hack" font-size="10" text-anchor="left" fill="blue">2.356...</text>
+  </g>
+
+  <!-- Right Circle -->
+  <g transform="translate(300, 0)">
+    <!-- Coordinate axes -->
+    <line x1="-100" y1="0" x2="100" y2="0" stroke="gray" stroke-width="1"/>
+    <line x1="0" y1="-100" x2="0" y2="100" stroke="gray" stroke-width="1"/>
+    <!-- Circle centered at origin -->
+    <circle cx="0" cy="0" r="80" fill="none" stroke="black" stroke-width="2"/>
+    
+    <!-- Blue arc from 0 degrees to red dot
+    <path d="M 80 0 A 80 80 0 0 0 -56.57 -56.57" fill="none" stroke="blue" stroke-width="4"/> -->
+    
+    <!-- Red dot on the circle in second quadrant -->
+    <circle cx="-56.57" cy="-56.57" r="5" fill="red"/>
+    
+    <!-- Green dot on the right at 0 degree angle -->
+    <circle cx="80" cy="0" r="5" fill="green"/>
+    
+    <!-- Red dot label -->
+    <text x="-110" y="-65" font-family="Hack" font-size="10" text-anchor="right" fill="red">2.356...</text>
+  </g>
+
+  <!-- Arrow pointing from left to right -->
+  <path d="M 120 0 L 180 0 M 170 -10 L 180 0 L 170 10" fill="none" stroke="black" stroke-width="2"/>
+</svg>
