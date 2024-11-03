@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2024-11-03 Sun 14:28 -->
+<!-- 2024-11-03 Sun 15:25 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Trigonométrie</title>
@@ -9,11 +9,9 @@
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
-<link rel="stylesheet" type="text/css" href="src/readtheorg_theme/css/search.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/search.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
 <link rel="stylesheet" type="text/css" href="math-blog.css"/>
 <script>
@@ -81,18 +79,18 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org73ce0eb">1. Introduction</a></li>
-<li><a href="#org0236d73">2. Le cercle trigonométrique</a>
+<li><a href="#org9e6e652">1. Introduction</a></li>
+<li><a href="#orgc74e618">2. Le cercle trigonométrique</a>
 <ul>
-<li><a href="#org18714eb">2.1. Radians</a></li>
+<li><a href="#orgb740bcd">2.1. Radians</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org73ce0eb" class="outline-2">
-<h2 id="org73ce0eb"><span class="section-number-2">1.</span> Introduction</h2>
+<div id="outline-container-org9e6e652" class="outline-2">
+<h2 id="org9e6e652"><span class="section-number-2">1.</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Qu'est-ce que la trigonométrie ? C'est l'<b>étude des angles</b>. Alors qu'est-ce qu'un <i>angle</i> ?<br>
@@ -103,7 +101,7 @@ Pour comprendre ce qu'est un angle, commençons par un exemple (souvent une bonn
 </p>
 
 
-<div id="orgb209b20" class="figure">
+<div id="org4e8e61f" class="figure">
 <p><img src="sixty-deg.svg" alt="sixty-deg.svg" class="org-svg" style="height:200px;"><br>
 </p>
 </div>
@@ -121,7 +119,7 @@ Pour comprendre cela visuellement, nous notons que tandis que les nombres vivent
 les angles vivent sur un <i>cercle</i> :<br>
 </p>
 
-<div id="org7606ff3" class="figure">
+<div id="org0196ede" class="figure">
 <p><img src="trig-cercle.svg" alt="trig-cercle.svg" class="org-svg" style="height:400px;"><br>
 </p>
 </div>
@@ -130,7 +128,7 @@ les angles vivent sur un <i>cercle</i> :<br>
 Cela capture le comportement des angles qui reviennent sur eux-mêmes, tout comme un point sur un cercle revient sur lui-même. En mathématiques, tout comme les nombres réels sont correctement conceptualisés comme des points sur une droite (mais pas n'importe quelle droite, la <i>droite des nombres réels</i>), les angles sont simplement des points sur un cercle (mais pas n'importe quel cercle, le <i>cercle trigonométrique</i>). Cela conduit au fait fondamental suivant.<br>
 </p>
 
-<div class="THM" id="org2c004cf">
+<div class="THM" id="orgc6d87e8">
 <p>
 <b>Fait fondamental.</b> Un angle est un point sur le cercle trigonométrique.<br>
 </p>
@@ -148,14 +146,14 @@ Comme mentionné précédemment, il est utile de fixer notre cercle préféré, 
 </div>
 
 
-<div id="outline-container-org0236d73" class="outline-2">
-<h2 id="org0236d73"><span class="section-number-2">2.</span> Le cercle trigonométrique</h2>
+<div id="outline-container-orgc74e618" class="outline-2">
+<h2 id="orgc74e618"><span class="section-number-2">2.</span> Le cercle trigonométrique</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 OK, nous nous intéressons aux angles, qui ne sont que des points sur un cercle. Mais comment devrions-nous désigner ces points ? C'est un problème pratique : imaginez que vous appeliez votre ami et que vous vouliez lui communiquer votre angle préféré, c'est-à-dire un point sur le cercle :<br>
 </p>
 
-<div id="org3222d24" class="figure">
+<div id="org8db0107" class="figure">
 <p><img src="fav_angle.svg" alt="fav_angle.svg" class="org-svg" style="height:300px;"><br>
 </p>
 </div>
@@ -164,15 +162,15 @@ OK, nous nous intéressons aux angles, qui ne sont que des points sur un cercle.
 Comment décrivez-vous un tel point à votre ami (vous ne pouvez pas simplement le lui montrer car c'est une conversation téléphonique) ? Il existe deux solutions principales à ce problème, et toutes deux nous mèneront à des concepts mathématiques importants.<br>
 </p>
 </div>
-<div id="outline-container-org18714eb" class="outline-3">
-<h3 id="org18714eb"><span class="section-number-3">2.1.</span> Radians</h3>
+<div id="outline-container-orgb740bcd" class="outline-3">
+<h3 id="orgb740bcd"><span class="section-number-3">2.1.</span> Radians</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Supposons que vous et votre ami ayez préalablement convenu d'un point spécial sur le cercle trigonométrique appelé <i>le point de départ</i>.<br>
 En effet, tout comme la droite des nombres réels n'est pas n'importe quelle droite, le cercle trigonométrique n'est pas n'importe quel cercle : il est accompagné de données supplémentaires, notamment un point de départ spécial sur la droite :<br>
 </p>
 
-<div id="org2790d78" class="figure">
+<div id="org57cb15e" class="figure">
 <p><img src="fav_angle_with_start.svg" alt="fav_angle_with_start.svg" class="org-svg" style="height:300px;"><br>
 </p>
 </div>
@@ -181,7 +179,7 @@ En effet, tout comme la droite des nombres réels n'est pas n'importe quelle dro
 De plus, le <i>rayon</i> du cercle trigonométrique est également fixé, il a une valeur de <b>1</b>. Avec ces données supplémentaires, une excellent manière de décrire votre angle préféré est de spécifier la distance entre celui-ci et le point de départ, en faisant le tour du cercle :<br>
 </p>
 
-<div id="orgccd48f2" class="figure">
+<div id="org1e7a22d" class="figure">
 <p><img src="fav_angle_rad.svg" alt="fav_angle_rad.svg" class="org-svg" style="height:300px;"><br>
 </p>
 </div>
@@ -199,7 +197,7 @@ Il serait en effet facile de donner ce nombre à notre ami au téléphone !<br>
 <p>
 <b>Conversion entre degrés et radians.</b> Bien que les radians soient mathématiquement supérieurs aux degrés (vous verrez en analyse&#x2026;), on est souvent plus habitué à penser aux angles en degrés. Savoir convertir est donc utile :<br>
 </p>
-<div class="THM" id="org261a901">
+<div class="THM" id="org4a4cff7">
 <p>
 \[\begin{aligned}\text{degré} = \dfrac{\text{rad}}{\pi} \cdot 180 \\ \text{rad} = \dfrac{\text{degré}}{180} \cdot \pi \end{aligned}\]<br>
 (p. 27 du formulaire)<br>
@@ -216,7 +214,7 @@ Il serait en effet facile de donner ce nombre à notre ami au téléphone !<br>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: hardiman</p>
-<p class="date">Created: 2024-11-03 Sun 14:28</p>
+<p class="date">Created: 2024-11-03 Sun 15:25</p>
 </div>
 </body>
 </html>
