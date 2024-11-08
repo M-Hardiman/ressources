@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -100 200 200">
+  <!-- Coordinate axes -->
+  <line x1="-100" y1="0" x2="100" y2="0" stroke="gray" stroke-width="1"/>
+  <line x1="0" y1="-100" x2="0" y2="100" stroke="gray" stroke-width="1"/>
+  
+  <!-- Circle centered at origin -->
+  <circle cx="0" cy="0" r="80" fill="none" stroke="black" stroke-width="2"/>
+
+  <!-- Dotted measurement lines -->
+  <line x1="-56.57" y1="0" x2="-56.57" y2="-56.57" stroke="blue" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="0" y1="-56.57" x2="-56.57" y2="-56.57" stroke="blue" stroke-width="1" stroke-dasharray="4"/>
+
+  
+  <!-- Red dot on the circle in second quadrant -->
+  <circle cx="-56.57" cy="-56.57" r="5" fill="red"/>
+    
+  <!-- Coordinate labels using foreignObject for MathJax -->
+  <foreignObject x="-70" y="5" width="40" height="30">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+	<mo>-</mo>
+        <mfrac>
+          <mrow>
+            <msqrt>
+              <mn>2</mn>
+            </msqrt>
+          </mrow>
+          <mn>2</mn>
+        </mfrac>
+      </math>
+    </div>
+  </foreignObject>
+  
+  <foreignObject x="5" y="-70" width="40" height="30">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mfrac>
+          <mrow>
+            <msqrt>
+              <mn>2</mn>
+            </msqrt>
+          </mrow>
+          <mn>2</mn>
+        </mfrac>
+      </math>
+    </div>
+  </foreignObject>
+</svg>

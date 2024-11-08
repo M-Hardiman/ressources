@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 -65 110 85">
+  <!-- All elements wrapped in a group and rotated 20 degrees -->
+  <g transform="rotate(-50)">  <!-- negative for clockwise rotation -->
+    <!-- Unit circle sector (scaled up by 80) -->
+    <path d="M0,0 L80,0 A80,80 0 0,1 40,69.28 L0,0" 
+          fill="#e6f3ff" stroke="black" stroke-width="1"/>
+    
+    <!-- Arc -->
+    <path d="M80,0 A80,80 0 0,1 40,69.28" 
+          fill="none" stroke="#2080f0" stroke-width="2"/>
+    
+    <!-- Radius lines -->
+    <line x1="0" y1="0" x2="80" y2="0" stroke="black" stroke-width="1"/>
+    <line x1="0" y1="0" x2="40" y2="69.28" stroke="black" stroke-width="1"/>
+    
+    <!-- Angle arc -->
+    <path d="M24,0 A24,24 0 0,1 12,20.78" 
+          fill="none" stroke="black" stroke-width="1"/>
+    
+    <!-- Labels -->
+    <g transform="rotate(50)"> <!-- Counter-rotate to keep text horizontal -->
+      <foreignObject x="25" y="-25" width="30" height="20">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+          <math xmlns="http://www.w3.org/1998/Math/MathML" style="font-size: 80%">
+            <mfrac>
+              <mi>π</mi>
+              <mn>3</mn>
+            </mfrac>
+          </math>
+        </div>
+      </foreignObject>
+      <text x="28" y="-45" font-size="8">4</text>
+      <text x="84" y="-15" font-family="serif" font-style="italic" font-size="8" fill="#2080f0">l</text>
+    </g>
+  </g>
+</svg>

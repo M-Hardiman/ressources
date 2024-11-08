@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -100 200 200">
+  <!-- Coordinate axes -->
+  <line x1="-100" y1="0" x2="100" y2="0" stroke="gray" stroke-width="1"/>
+  <line x1="0" y1="-100" x2="0" y2="100" stroke="gray" stroke-width="1"/>
+  
+  <!-- Circle centered at origin -->
+  <circle cx="0" cy="0" r="80" fill="none" stroke="black" stroke-width="2"/>
+  
+  <!-- Vertical line at x=1 for tangent -->
+  <line x1="80" y1="-100" x2="80" y2="100" stroke="green" stroke-width="2"/>
+  
+  <!-- Line from point through origin to tangent line -->
+  <line x1="-56.57" y1="-56.57" x2="80" y2="80" stroke="blue" stroke-width="1" stroke-dasharray="4"/>
+  
+  <!-- Red dot on the circle in second quadrant -->
+  <circle cx="-56.57" cy="-56.57" r="5" fill="red"/>
+  
+  <!-- Blue dot where line intersects tangent line -->
+  <circle cx="80" cy="80" r="2.5" fill="blue"/>
+    
+  <!-- Tangent value label -->
+  <text x="85" y="85" font-family="Arial" font-size="20" fill="black">
+    -1
+  </text>
+</svg>
+
+
