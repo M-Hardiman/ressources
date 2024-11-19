@@ -1,0 +1,26 @@
+#+SETUPFILE: ../../theme-readtheorg.setup
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../math-blog.css"/>
+
+* Exercice
+#+SETUPFILE: ../../theme-readtheorg.setup
+#+HTML_HEAD: <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../math-blog.css"/>
+#+attr_html: :style height: 40px;
+
+* Exercice 
+À l'aide du tableau des valeurs particulières et des *symétries* du cercle trigonométrique, compléter le tableau ci-dessous *sans calculatrice*:
+
+| degrés    | radians     | cos | sin | tan |
+|-----------+-------------+-----+-----+-----|
+| $135^{o}$ | $\dfrac{3\pi}{4}$ | $-\dfrac{\sqrt{2}}{2}$ | $\dfrac{\sqrt{2}}{2}$ | $-1$ |
+| $150^{o}$ | $\dfrac{5\pi}{6}$ | $-\dfrac{\sqrt{3}}{2}$ | $\dfrac{1}{2}$ | $-\dfrac{\sqrt{3}}{3}$ |
+| $-60^{o}$ | $-\dfrac{\pi}{3}$ | $\dfrac{1}{2}$ | $-\dfrac{\sqrt{3}}{2}$ | $-\sqrt{3}$ |
+| $180^{o}$ | $\pi$ | $-1$ | $0$ | $0$ |
+| $225^{o}$ | $\dfrac{5\pi}{4}$ | $-\dfrac{\sqrt{2}}{2}$ | $-\dfrac{\sqrt{2}}{2}$ | $1$ |
+| $270^{o}$ | $\dfrac{3\pi}{2}$ | $0$ | $-1$ | $/$ |
+| $300^{o}$ | $\dfrac{5\pi}{3}$ | $\dfrac{1}{2}$ | $-\dfrac{\sqrt{3}}{2}$ | $-\sqrt{3}$ |
+| $315^{o}$ | $\dfrac{7\pi}{4}$ | $\dfrac{\sqrt{2}}{2}$ | $-\dfrac{\sqrt{2}}{2}$ | $-1$ |
+| $360^{o}$ | $2\pi$ | $1$ | $0$ | $0$ |
+| $-150^{o}$ | $-\dfrac{5\pi}{6}$ | $-\dfrac{\sqrt{3}}{2}$ | $-\dfrac{1}{2}$ | $\dfrac{\sqrt{3}}{3}$ |
+| $1080^{o}$ | $6\pi$ | $1$ | $0$ | $0$ |
+| $945^{o}$ | $\dfrac{21\pi}{4}$ | $-\dfrac{\sqrt{2}}{2}$ | $-\dfrac{\sqrt{2}}{2}$ | $1$ |

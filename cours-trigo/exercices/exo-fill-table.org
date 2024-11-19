@@ -1,0 +1,20 @@
+#+SETUPFILE: ../../theme-readtheorg.setup
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../math-blog.css"/>
+
+* Exercice
+À l'aide du tableau des valeurs particulières et des *symétries* du cercle trigonométrique, compléter le tableau ci-dessous *sans calculatrice*:
+
+| degrés    | radians  | cos | sin | tan |
+|-----------+----------+-----+-----+-----|
+| $135^{o}$ |          |     |     |     |
+|           | $5\pi/6$ |     |     |     |
+|           | $-\pi/3$ |     |     |     |
+|           | $\pi$    |     |     |     |
+| $225^{o}$ |          |     |     |     |
+| $270^{o}$ |          |     |     |     |
+|           | $5\pi/3$ |     |     |     |
+| $315^{o}$ |          |     |     |     |
+|           | $2\pi$   |     |     |     |
+|           | $-5\pi/6$|     |     |     |
+|           | $6\pi$   |     |     |     |
+| $945^{o}$ |          |     |     |     |

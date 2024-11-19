@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -100 200 200">
+  <!-- Coordinate axes -->
+  <line x1="-100" y1="0" x2="100" y2="0" stroke="gray" stroke-width="1"/>
+  <line x1="0" y1="-100" x2="0" y2="100" stroke="gray" stroke-width="1"/>
+  
+  <!-- Circle centered at origin -->
+  <circle cx="0" cy="0" r="80" fill="none" stroke="black" stroke-width="2"/>
+  
+  <!-- Quadrant labels -->
+  <text x="40" y="-40" fill="blue" font-size="14">I</text>
+  <text x="-60" y="-40" fill="blue" font-size="14">II</text>
+  <text x="-60" y="50" fill="blue" font-size="14">III</text>
+  <text x="40" y="50" fill="blue" font-size="14">IV</text>
+  
+  <!-- Axis labels -->
+  <text x="90" y="-5" fill="gray" font-size="12">x</text>
+  <text x="5" y="-90" fill="gray" font-size="12">y</text>
+  
+  <!-- Quadrant I (top right) -->
+  <path d="M 0 0 L 80 0 A 80 80 0 0 0 0 -80 Z" fill="rgba(255,0,0,0.1)"/>
+  <!-- Quadrant II (top left) -->
+  <path d="M 0 0 L 0 -80 A 80 80 0 0 0 -80 0 Z" fill="rgba(0,255,0,0.1)"/>
+  <!-- Quadrant III (bottom left) -->
+  <path d="M 0 0 L -80 0 A 80 80 0 0 0 0 80 Z" fill="rgba(0,0,255,0.1)"/>
+  <!-- Quadrant IV (bottom right) -->
+  <path d="M 0 0 L 0 80 A 80 80 0 0 0 80 0 Z" fill="rgba(255,255,0,0.1)"/>
+  
+  <!-- Red dots at multiples of π/6 (excluding multiples of π/2 and π/4) -->
+  <circle cx="69.28" cy="-40" r="4" fill="red"/>    <!-- π/6 -->
+  <circle cx="40" cy="-69.28" r="4" fill="red"/>    <!-- π/3 -->
+  <circle cx="-40" cy="-69.28" r="4" fill="red"/>   <!-- 2π/3 -->
+  <circle cx="-69.28" cy="-40" r="4" fill="red"/>   <!-- 5π/6 -->
+  <circle cx="-69.28" cy="40" r="4" fill="red"/>    <!-- 7π/6 -->
+  <circle cx="-40" cy="69.28" r="4" fill="red"/>    <!-- 4π/3 -->
+  <circle cx="40" cy="69.28" r="4" fill="red"/>     <!-- 5π/3 -->
+  <circle cx="69.28" cy="40" r="4" fill="red"/>     <!-- 11π/6 -->
+</svg>
+
