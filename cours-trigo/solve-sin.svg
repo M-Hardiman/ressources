@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -100 200 200">
+  <!-- Coordinate axes -->
+  <line x1="-100" y1="0" x2="100" y2="0" stroke="gray" stroke-width="1"/>
+  <line x1="0" y1="-100" x2="0" y2="100" stroke="gray" stroke-width="1"/>
+  
+  <!-- Horizontal line at y=-0.8 -->
+  <line x1="-100" y1="64" x2="100" y2="64" stroke="blue" stroke-width="1" stroke-dasharray="4"/>
+  
+  <!-- Circle centered at origin -->
+  <circle cx="0" cy="0" r="80" fill="none" stroke="black" stroke-width="2"/>
+  
+  <!-- Points where sin(theta) = -0.8 -->
+  <circle cx="-48" cy="64" r="4" fill="red"/>
+  <circle cx="48" cy="64" r="4" fill="red"/>
+  
+  <!-- Label -->
+  <text x="-25" y="60">-0.8</text>
+</svg>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2024-11-16 Sat 21:56 -->
+<!-- 2024-11-21 Thu 11:51 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Trigonométrie</title>
@@ -79,27 +79,28 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgdd38b49">1. Introduction</a></li>
-<li><a href="#orgf278bd3">2. Le cercle trigonométrique</a>
+<li><a href="#orga362aa6">1. Introduction</a></li>
+<li><a href="#org6b9da09">2. Le cercle trigonométrique</a>
 <ul>
-<li><a href="#org3f22a89">2.1. Radians</a></li>
-<li><a href="#orgc093e16">2.2. Fonctions Trigonométriques</a></li>
+<li><a href="#org9133052">2.1. Radians</a></li>
+<li><a href="#orgd64c99f">2.2. Fonctions Trigonométriques</a></li>
 </ul>
 </li>
-<li><a href="#org9045e0a">3. Propriétés des fonctions trigonométriques</a>
+<li><a href="#orgac773fd">3. Propriétés des fonctions trigonométriques</a>
 <ul>
-<li><a href="#orgf8feb8d">3.1. Identités trigonométriques</a></li>
-<li><a href="#orga4965b6">3.2. Valeurs particulières</a></li>
-<li><a href="#org5f83e85">3.3. Symétries du cercle trigonométrique</a></li>
+<li><a href="#orgf9c0927">3.1. Identités trigonométriques</a></li>
+<li><a href="#org19679a6">3.2. Valeurs particulières</a></li>
+<li><a href="#orged6d06f">3.3. Symétries du cercle trigonométrique</a></li>
+<li><a href="#orgf2e022e">3.4. Trouver géométriquement les angles avec un \(\cos\), \(\sin\) ou \(\tan\) donné</a></li>
 </ul>
 </li>
-<li><a href="#orgb86dc2c">4. Arcs de cercle et secteurs circulaires</a></li>
+<li><a href="#org37d1246">4. Arcs de cercle et secteurs circulaires</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgdd38b49" class="outline-2">
-<h2 id="orgdd38b49"><span class="section-number-2">1.</span> Introduction</h2>
+<div id="outline-container-orga362aa6" class="outline-2">
+<h2 id="orga362aa6"><span class="section-number-2">1.</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Qu'est-ce que la trigonométrie ? C'est l'<b>étude des angles</b>. Alors qu'est-ce qu'un <i>angle</i> ?<br>
@@ -110,7 +111,7 @@ Pour comprendre ce qu'est un angle, commençons par un exemple (souvent une bonn
 </p>
 
 
-<div id="org6782fa5" class="figure">
+<div id="orga8a6ac2" class="figure">
 <p><img src="sixty-deg.svg" alt="sixty-deg.svg" class="org-svg" style="height:200px;"><br>
 </p>
 </div>
@@ -128,7 +129,7 @@ Pour comprendre cela visuellement, nous notons que tandis que les nombres vivent
 les angles vivent sur un <i>cercle</i> :<br>
 </p>
 
-<div id="orgfde10b6" class="figure">
+<div id="org3f092e5" class="figure">
 <p><img src="trig-cercle.svg" alt="trig-cercle.svg" class="org-svg" style="height:400px;"><br>
 </p>
 </div>
@@ -137,7 +138,7 @@ les angles vivent sur un <i>cercle</i> :<br>
 Cela capture le comportement des angles qui reviennent sur eux-mêmes, tout comme un point sur un cercle revient sur lui-même. En mathématiques, tout comme les nombres réels sont correctement conceptualisés comme des points sur une droite (mais pas n'importe quelle droite, la <i>droite des nombres réels</i>), les angles sont simplement des points sur un cercle (mais pas n'importe quel cercle, le <i>cercle trigonométrique</i>). Cela conduit au fait fondamental suivant.<br>
 </p>
 
-<div class="THM" id="org16cb850">
+<div class="THM" id="orga224fb7">
 <p>
 <b>Fait fondamental.</b> Un angle est un point sur le cercle trigonométrique.<br>
 </p>
@@ -155,14 +156,14 @@ Comme mentionné précédemment, il est utile de fixer notre cercle préféré, 
 </div>
 
 
-<div id="outline-container-orgf278bd3" class="outline-2">
-<h2 id="orgf278bd3"><span class="section-number-2">2.</span> Le cercle trigonométrique</h2>
+<div id="outline-container-org6b9da09" class="outline-2">
+<h2 id="org6b9da09"><span class="section-number-2">2.</span> Le cercle trigonométrique</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 OK, nous nous intéressons aux angles, qui ne sont que des points sur un cercle. Mais comment devrions-nous désigner ces points ? C'est un problème pratique : imaginez que vous appeliez votre ami et que vous vouliez lui communiquer votre angle préféré, c'est-à-dire un point sur le cercle :<br>
 </p>
 
-<div id="org9a9e6b4" class="figure">
+<div id="orgc86d0ee" class="figure">
 <p><img src="fav_angle.svg" alt="fav_angle.svg" class="org-svg" style="height:300px;"><br>
 </p>
 </div>
@@ -171,15 +172,15 @@ OK, nous nous intéressons aux angles, qui ne sont que des points sur un cercle.
 Comment décrivez-vous un tel point à votre ami (vous ne pouvez pas simplement le lui montrer car c'est une conversation téléphonique) ? Il existe deux solutions principales à ce problème, et toutes deux nous mèneront à des concepts mathématiques importants.<br>
 </p>
 </div>
-<div id="outline-container-org3f22a89" class="outline-3">
-<h3 id="org3f22a89"><span class="section-number-3">2.1.</span> Radians</h3>
+<div id="outline-container-org9133052" class="outline-3">
+<h3 id="org9133052"><span class="section-number-3">2.1.</span> Radians</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Supposons que vous et votre ami ayez préalablement convenu d'un point spécial sur le cercle trigonométrique appelé <i>le point de départ</i>.<br>
 En effet, tout comme la droite des nombres réels n'est pas n'importe quelle droite, le cercle trigonométrique n'est pas n'importe quel cercle : il est accompagné de données supplémentaires, notamment un point de départ spécial sur la droite :<br>
 </p>
 
-<div id="org3c7d9bb" class="figure">
+<div id="orge8a2cf2" class="figure">
 <p><img src="fav_angle_with_start.svg" alt="fav_angle_with_start.svg" class="org-svg" style="height:300px;"><br>
 </p>
 </div>
@@ -188,7 +189,7 @@ En effet, tout comme la droite des nombres réels n'est pas n'importe quelle dro
 De plus, le <i>rayon</i> du cercle trigonométrique est également fixé, il a une valeur de <b>1</b>. Avec ces données supplémentaires, une excellent manière de décrire votre angle préféré est de spécifier la distance entre celui-ci et le point de départ, en faisant le tour du cercle :<br>
 </p>
 
-<div id="orgb86413a" class="figure">
+<div id="org0f7ad3a" class="figure">
 <p><img src="fav_angle_rad.svg" alt="fav_angle_rad.svg" class="org-svg" style="height:300px;"><br>
 </p>
 </div>
@@ -206,7 +207,7 @@ Il serait en effet facile de donner ce nombre à notre ami au téléphone !<br>
 <p>
 <b>Conversion entre degrés et radians.</b> Bien que les radians soient mathématiquement supérieurs aux degrés (vous verrez en analyse&#x2026;), on est souvent plus habitué à penser aux angles en degrés. Savoir convertir est donc utile :<br>
 </p>
-<div class="THM" id="org885c1e8">
+<div class="THM" id="org3860d27">
 <p>
 \[\begin{aligned}\text{degré} = \dfrac{\text{rad}}{\pi} \cdot 180 \\ \text{rad} = \dfrac{\text{degré}}{180} \cdot \pi \end{aligned}\]<br>
 (p. 27 du formulaire)<br>
@@ -226,14 +227,14 @@ Nous pouvons également utiliser des <i>radians négatifs</i>, toujours en mesur
 </div>
 </div>
 
-<div id="outline-container-orgc093e16" class="outline-3">
-<h3 id="orgc093e16"><span class="section-number-3">2.2.</span> Fonctions Trigonométriques</h3>
+<div id="outline-container-orgd64c99f" class="outline-3">
+<h3 id="orgd64c99f"><span class="section-number-3">2.2.</span> Fonctions Trigonométriques</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 La façon standard de décrire un point est de donner ses <i>coordonnées</i>. Ainsi, par exemple, avec notre point favori, nous aurions<br>
 </p>
 
-<div id="org30fee83" class="figure">
+<div id="org24d2a07" class="figure">
 <p><img src="fav_angle_with_coords.svg" alt="fav_angle_with_coords.svg" class="org-svg" style="height:300px;"><br>
 </p>
 </div>
@@ -263,7 +264,7 @@ Quand il s'agit d'angles, nous donnons des noms spéciaux à ces coordonnées :
 Il existe, en effet, une autre fonction trigonométrique appelée \(\tan\), qui peut être définie géométriquement comme suit :<br>
 </p>
 
-<div id="org2d84d91" class="figure">
+<div id="org951613f" class="figure">
 <p><img src="fav_angle_with_tan.svg" alt="fav_angle_with_tan.svg" class="org-svg" style="height:300px;"><br>
 </p>
 </div>
@@ -278,18 +279,18 @@ L'importance de \(\tan\) par rapport à \(\cos\) et \(\sin\) est à la fois moin
 </div>
 
 
-<div id="outline-container-org9045e0a" class="outline-2">
-<h2 id="org9045e0a"><span class="section-number-2">3.</span> Propriétés des fonctions trigonométriques</h2>
+<div id="outline-container-orgac773fd" class="outline-2">
+<h2 id="orgac773fd"><span class="section-number-2">3.</span> Propriétés des fonctions trigonométriques</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-orgf8feb8d" class="outline-3">
-<h3 id="orgf8feb8d"><span class="section-number-3">3.1.</span> Identités trigonométriques</h3>
+<div id="outline-container-orgf9c0927" class="outline-3">
+<h3 id="orgf9c0927"><span class="section-number-3">3.1.</span> Identités trigonométriques</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 Soit \(\alpha\) un angle (c'est-à-dire un point sur le cercle).<br>
 </p>
 
-<div id="org59593b5" class="figure">
+<div id="org0380010" class="figure">
 <p><img src="angle-with-sin-cos.svg" alt="angle-with-sin-cos.svg" class="org-svg" style="height:400px;"><br>
 </p>
 </div>
@@ -298,7 +299,7 @@ Soit \(\alpha\) un angle (c'est-à-dire un point sur le cercle).<br>
 Notez que dans cette figure, nous pouvons considérer le triangle rectangle suivant.<br>
 </p>
 
-<div id="org20b7604" class="figure">
+<div id="orgc6da719" class="figure">
 <p><img src="angle-with-sin-cos-with-triangle.svg" alt="angle-with-sin-cos-with-triangle.svg" class="org-svg" style="height:400px;"><br>
 </p>
 </div>
@@ -306,9 +307,9 @@ Notez que dans cette figure, nous pouvons considérer le triangle rectangle suiv
 <p>
 À partir de cela, nous pouvons utiliser le théorème de Pythagore pour conclure que :<br>
 </p>
-<div class="THM" id="orga2461e1">
+<div class="THM" id="org714641b">
 <p>
-<b>Théorème.</b> <a id="org316c704"></a><br>
+<b>Théorème.</b> <a id="orgab3e0a7"></a><br>
 \[\cos^2(\alpha) + \sin^2(\alpha) = 1,\]<br>
 pour tout angle \(\alpha\).<br>
 </p>
@@ -319,7 +320,7 @@ pour tout angle \(\alpha\).<br>
 Si nous introduisons \(\tan(\alpha)\) dans l'image, nous pouvons considérer les deux triangles suivants.<br>
 </p>
 
-<div id="org48285eb" class="figure">
+<div id="orge53c827" class="figure">
 <p><img src="angle-with-sin-cos-with-triangleS.svg" alt="angle-with-sin-cos-with-triangleS.svg" class="org-svg" style="height:400px;"><br>
 </p>
 </div>
@@ -328,7 +329,7 @@ Si nous introduisons \(\tan(\alpha)\) dans l'image, nous pouvons considérer les
 Notez que ces deux triangles sont semblables (ils ont les mêmes angles) et sont donc proportionnels. De plus, en considérant les côtés inférieurs, nous voyons que le facteur de proportionnalité est \(\dfrac{1}{\cos(\alpha)}\).<br>
 </p>
 
-<div id="org272df9c" class="figure">
+<div id="org6b5622f" class="figure">
 <p><img src="prop-trangles.svg" alt="prop-trangles.svg" class="org-svg" style="height:200px;"><br>
 </p>
 </div>
@@ -336,9 +337,9 @@ Notez que ces deux triangles sont semblables (ils ont les mêmes angles) et sont
 <p>
 En examinant le côté droit des deux triangles, nous obtenons le résultat suivant.<br>
 </p>
-<div class="THM" id="org8044279">
+<div class="THM" id="org088a9b2">
 <p>
-<b>Théorème.</b> <a id="org8a4ddc3"></a><br>
+<b>Théorème.</b> <a id="org4039c37"></a><br>
 \[\tan(\alpha) = \frac{\sin(\alpha)}{\cos(\alpha)}\]<br>
 pour tout angle \(\alpha\).<br>
 </p>
@@ -347,18 +348,18 @@ pour tout angle \(\alpha\).<br>
 </div>
 </div>
 
-<div id="outline-container-orga4965b6" class="outline-3">
-<h3 id="orga4965b6"><span class="section-number-3">3.2.</span> Valeurs particulières</h3>
+<div id="outline-container-org19679a6" class="outline-3">
+<h3 id="org19679a6"><span class="section-number-3">3.2.</span> Valeurs particulières</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
-Nous expliquons maintenant comment calculer les valeurs de \(\cos(\alpha)\), \(\sin(\alpha)\) et \(\tan(\alpha)\) pour des valeurs spécifiques de \(\alpha\). Dans chaque cas, nous nous concentrons uniquement sur le calcul de \(\cos(\alpha)\) et \(\sin(\alpha)\), puis nous utilisons notre résultat précédent qui établit que <a href="#org8a4ddc3">\(\tan(\alpha) = \frac{\sin(\alpha)}{\cos(\alpha)}\)</a>.<br>
+Nous expliquons maintenant comment calculer les valeurs de \(\cos(\alpha)\), \(\sin(\alpha)\) et \(\tan(\alpha)\) pour des valeurs spécifiques de \(\alpha\). Dans chaque cas, nous nous concentrons uniquement sur le calcul de \(\cos(\alpha)\) et \(\sin(\alpha)\), puis nous utilisons notre résultat précédent qui établit que <a href="#org4039c37">\(\tan(\alpha) = \frac{\sin(\alpha)}{\cos(\alpha)}\)</a>.<br>
 </p>
 <ul class="org-ul">
 <li><p>
 <b>Angles "simples" : \(\alpha = 0\), \(\alpha = \dfrac{\pi}{2}\), \(\alpha = \pi\) et \(\alpha = \dfrac{3\pi}{2}\).</b><br>
 </p>
 
-<div id="orgb0ab23f" class="figure">
+<div id="org2dc56df" class="figure">
 <p><img src="easy-angles.svg" alt="easy-angles.svg" class="org-svg" style="height:400px;"><br>
 </p>
 </div>
@@ -423,7 +424,7 @@ Pour ces angles "simples", nous pouvons directement lire les valeurs de \(\cos\)
 <li>\(\alpha = \dfrac{\pi}{4}\)<br></li>
 </ul>
 
-<div id="org001b255" class="figure">
+<div id="orge9e6f77" class="figure">
 <p><img src="pi-over-4.svg" alt="pi-over-4.svg" class="org-svg" style="height:400px;"><br>
 </p>
 </div>
@@ -431,7 +432,7 @@ Pour ces angles "simples", nous pouvons directement lire les valeurs de \(\cos\)
 <p>
 En observant la figure, nous remarquons que<br>
 \[\cos\left(\frac{\pi}{4}\right) = \sin\left(\frac{\pi}{4}\right).\]<br>
-Nous pouvons donc utiliser l'identité universelle <a href="#org316c704">\(\cos^2(\alpha) + \sin^2(\alpha) = 1\)</a> pour trouver \(\cos\left(\frac{\pi}{4}\right)\) :<br>
+Nous pouvons donc utiliser l'identité universelle <a href="#orgab3e0a7">\(\cos^2(\alpha) + \sin^2(\alpha) = 1\)</a> pour trouver \(\cos\left(\frac{\pi}{4}\right)\) :<br>
 \[\begin{aligned} \cos^2\left(\frac{\pi}{4}\right) + \sin^2\left(\frac{\pi}{4}\right) &= 1 \\
 \cos^2\left(\frac{\pi}{4}\right) + \cos^2\left(\frac{\pi}{4}\right) &= 1\\
 2\cdot \cos^2\left(\frac{\pi}{4}\right) &= 1\\
@@ -475,14 +476,14 @@ Nous avons donc<br>
 <b>\(\alpha = \dfrac{\pi}{6}\) et \(\alpha = \dfrac{\pi}{3}\)</b><br>
 </p>
 
-<div id="org700196e" class="figure">
+<div id="org344c8ac" class="figure">
 <p><img src="eq-triangle.svg" alt="eq-triangle.svg" class="org-svg" style="height:400px;"><br>
 </p>
 </div></li>
 </ul>
 
 <p>
-Pour trouver \(\sin\left(\dfrac{\pi}{6}\right)\), nous considérons le triangle illustré ci-dessus. En effet, ce triangle est équilatéral car les deux côtés gauches ont une longueur de \(1\) et l'angle en surbrillance est \(\dfrac{\pi}{3} = 60^{\circ}\). Par conséquent, le côté droit a également une longueur de \(1\), ce qui implique que \(\sin\left(\dfrac{\pi}{6}\right) = \dfrac{1}{2}\). Pour trouver \(\cos(\alpha)\), comme d'habitude, nous utilisons <a href="#org316c704">\(\cos^2(\alpha) + \sin^2(\alpha) = 1\)</a>.<br>
+Pour trouver \(\sin\left(\dfrac{\pi}{6}\right)\), nous considérons le triangle illustré ci-dessus. En effet, ce triangle est équilatéral car les deux côtés gauches ont une longueur de \(1\) et l'angle en surbrillance est \(\dfrac{\pi}{3} = 60^{\circ}\). Par conséquent, le côté droit a également une longueur de \(1\), ce qui implique que \(\sin\left(\dfrac{\pi}{6}\right) = \dfrac{1}{2}\). Pour trouver \(\cos(\alpha)\), comme d'habitude, nous utilisons <a href="#orgab3e0a7">\(\cos^2(\alpha) + \sin^2(\alpha) = 1\)</a>.<br>
 \[\begin{aligned} \cos^2\left(\frac{\pi}{6}\right) + \sin^2\left(\frac{\pi}{6}\right) &= 1 \\
 \cos^2\left(\frac{\pi}{6}\right) + \left(\dfrac{1}{2}\right)^2 &= 1\\
 \cos^2\left(\frac{\pi}{6}\right) + \dfrac{1}{4} &= 1\\
@@ -497,7 +498,7 @@ et<br>
 Enfin, pour \(\alpha = \frac{\pi}{3}\), nous remarquons que cet angle est symétrique à \(\frac{\pi}{6}\) via la symétrie suivante.<br>
 </p>
 
-<div id="org45200b8" class="figure">
+<div id="org72a48f9" class="figure">
 <p><img src="3-6-sym.svg" alt="3-6-sym.svg" class="org-svg" style="height:400px;"><br>
 </p>
 </div>
@@ -549,27 +550,27 @@ Nous pouvons résumer tout cela dans le tableau suivant.<br>
 </div>
 </div>
 
-<div id="outline-container-org5f83e85" class="outline-3">
-<h3 id="org5f83e85"><span class="section-number-3">3.3.</span> Symétries du cercle trigonométrique</h3>
+<div id="outline-container-orged6d06f" class="outline-3">
+<h3 id="orged6d06f"><span class="section-number-3">3.3.</span> Symétries du cercle trigonométrique</h3>
 <div class="outline-text-3" id="text-3-3">
 <p>
 Pour identifier \(\cos(\alpha)\), \(\sin(\alpha)\) et \(\tan(\alpha)\) d'autres angles \(\alpha\) apparaissant sur le cercle trigonométrique, nous exploitons les <i>symétries du cercle</i>, en particulier le fait que les quatre quadrants d'un cercle sont symétriques.<br>
 </p>
 
-<div id="org83126da" class="figure">
+<div id="org347372a" class="figure">
 <p><img src="cercle-quads.svg" alt="cercle-quads.svg" class="org-svg" style="height:300px;"><br>
 </p>
 </div>
 
 <p>
-Pour expliquer comment cela fonctionne, nous le décomposons dans les cas suivants (comme d'habitude, nous nous concentrons sur \(\sin\) et \(\cos\), car \(\tan\) peut ensuite être <a href="#org8a4ddc3">calculé comme d'habitude</a>) :<br>
+Pour expliquer comment cela fonctionne, nous le décomposons dans les cas suivants (comme d'habitude, nous nous concentrons sur \(\sin\) et \(\cos\), car \(\tan\) peut ensuite être <a href="#org4039c37">calculé comme d'habitude</a>) :<br>
 </p>
 
 <ul class="org-ul">
 <li><b>Cas 1 : l'angle se trouve au début/fin d'un quadrant</b>.<br></li>
 </ul>
 
-<div id="org706a2f5" class="figure">
+<div id="orgd2fa9c5" class="figure">
 <p><img src="cercle-quads-2.svg" alt="cercle-quads-2.svg" class="org-svg" style="height:300px;"><br>
 </p>
 </div>
@@ -582,7 +583,7 @@ Dans ce cas, l'angle est l'un des angles "simples" représentés ci-dessous et s
 <li><b>Cas 2 : l'angle se trouve au milieu d'un quadrant</b>.<br></li>
 </ul>
 
-<div id="org7a5cc79" class="figure">
+<div id="orgb84f888" class="figure">
 <p><img src="cercle-quads-4.svg" alt="cercle-quads-4.svg" class="org-svg" style="height:300px;"><br>
 </p>
 </div>
@@ -595,7 +596,7 @@ Dans ce cas, l'angle est un multiple de l'angle \(\dfrac{\pi}{4}\) (dans le quad
 <li><b>Cas 3 : l'angle se trouve au tiers (ou aux 2 tiers) d'un quadrant</b>.<br></li>
 </ul>
 
-<div id="org0620952" class="figure">
+<div id="org910f4dd" class="figure">
 <p><img src="cercle-quads-6.svg" alt="cercle-quads-6.svg" class="org-svg" style="height:300px;"><br>
 </p>
 </div>
@@ -620,16 +621,53 @@ Dans ce cas, l'angle est un multiple de l'angle \(\dfrac{\pi}{6}\) (dans le quad
 </ul>
 </div>
 </div>
+
+<div id="outline-container-orgf2e022e" class="outline-3">
+<h3 id="orgf2e022e"><span class="section-number-3">3.4.</span> Trouver géométriquement les angles avec un \(\cos\), \(\sin\) ou \(\tan\) donné</h3>
+<div class="outline-text-3" id="text-3-4">
+<ul class="org-ul">
+<li><p>
+<b>Pour un \(\cos\) donné :</b><br>
+Comme le \(\cos\) se mesure sur l'axe <i>horizontal</i>, on trace une ligne <i>verticale</i>. Par exemple, pour trouver les angles \(\alpha\) avec \(\cos(\alpha) = 0.3\), on procède comme suit :<br>
+</p>
+
+<div id="org5921a7b" class="figure">
+<p><img src="solve-cos.svg" alt="solve-cos.svg" class="org-svg" style="height:300px;"><br>
+</p>
+</div></li>
+
+<li><p>
+<b>Pour un \(\sin\) donné :</b><br>
+Comme le \(\sin\) se mesure sur l'axe <i>vertical</i>, on trace une ligne <i>horizontale</i>. Par exemple, pour trouver les angles \(\alpha\) avec \(\sin(\alpha) = 0.3\), on procède comme suit :<br>
+</p>
+
+<div id="org14a735c" class="figure">
+<p><img src="solve-sin.svg" alt="solve-sin.svg" class="org-svg" style="height:300px;"><br>
+</p>
+</div></li>
+
+<li><p>
+<b>Pour un \(\tan\) donné :</b><br>
+Comme le \(\tan\) se mesure sur la droite verticale à \(x=1\), on marque la valeur donnée sur cette droite et on trace une ligne depuis l'origine passant par ce point. Par exemple, pour trouver les angles \(\alpha\) avec \(\tan(\alpha) = 0.3\), on procède comme suit :<br>
+</p>
+
+<div id="org5c10b7a" class="figure">
+<p><img src="solve-tan.svg" alt="solve-tan.svg" class="org-svg" style="height:300px;"><br>
+</p>
+</div></li>
+</ul>
+</div>
+</div>
 </div>
 
-<div id="outline-container-orgb86dc2c" class="outline-2">
-<h2 id="orgb86dc2c"><span class="section-number-2">4.</span> Arcs de cercle et secteurs circulaires</h2>
+<div id="outline-container-org37d1246" class="outline-2">
+<h2 id="org37d1246"><span class="section-number-2">4.</span> Arcs de cercle et secteurs circulaires</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Considérons l'arc de cercle suivant défini par un angle \(\alpha = \frac{\pi}{3}\) (mesuré en radians) :<br>
 </p>
 
-<div id="orgd52d0e0" class="figure">
+<div id="org20ffb36" class="figure">
 <p><img src="intro_arc.svg" alt="intro_arc.svg" class="org-svg" style="height:300px;"><br>
 </p>
 </div>
@@ -638,7 +676,7 @@ Considérons l'arc de cercle suivant défini par un angle \(\alpha = \frac{\pi}{
 <b>Comme le rayon est égal à un</b>, nous pouvons affirmer que la longueur de \(l\) est exactement \(\frac{\pi}{3}\). Alors que pouvons-nous dire dans ce cas ?<br>
 </p>
 
-<div id="org71ef916" class="figure">
+<div id="org39c2185" class="figure">
 <p><img src="intro_arc-2.svg" alt="intro_arc-2.svg" class="org-svg" style="height:300px;"><br>
 </p>
 </div>
@@ -647,7 +685,7 @@ Considérons l'arc de cercle suivant défini par un angle \(\alpha = \frac{\pi}{
 Par le principe de <i>proportionnalité</i>, nous pouvons affirmer qu'ici la longueur de \(l\) est \(4 \cdot \dfrac{\pi}{3} = \dfrac{4\pi}{3}\).<br>
 Cela nous mène au théorème suivant :<br>
 </p>
-<div class="THM" id="org502198c">
+<div class="THM" id="orga3b7a6e">
 <p>
 <b>Théorème.</b> Considérons un secteur circulaire avec un angle \(\alpha\) et un rayon \(r\) (en radian). Alors nous avons :<br>
 \[l=\alpha \cdot r,\]<br>
@@ -659,7 +697,7 @@ où \(l\) est la longueur de l'arc. (p. 17 du formulaire)<br>
 <p>
 De même, nous avons un résultat analogue pour l'aire d'un tel secteur circulaire.<br>
 </p>
-<div class="THM" id="org4db262c">
+<div class="THM" id="orgb7e0f6e">
 <p>
 <b>Théorème.</b> Considérons un secteur circulaire avec un angle \(\alpha\) et un rayon \(r\) (en radian). Alors nous avons :<br>
 \[A=\frac{1}{2}\cdot\alpha \cdot r^2,\]<br>
@@ -681,7 +719,7 @@ où \(A\) est l'aire du secteur circulaire. (p. 17 du formulaire)<br>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: hardiman</p>
-<p class="date">Created: 2024-11-16 Sat 21:56</p>
+<p class="date">Created: 2024-11-21 Thu 11:51</p>
 </div>
 </body>
 </html>

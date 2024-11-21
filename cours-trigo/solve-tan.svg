@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -100 210 200">
+  <!-- Coordinate axes -->
+  <line x1="-100" y1="0" x2="100" y2="0" stroke="gray" stroke-width="1"/>
+  <line x1="0" y1="-100" x2="0" y2="100" stroke="gray" stroke-width="1"/>
+  
+  <!-- Line y = 0.6x -->
+  <line x1="-100" y1="60" x2="100" y2="-60" stroke="blue" stroke-width="1" stroke-dasharray="4"/>
+  
+  <!-- Vertical line x=1 -->
+  <line x1="80" y1="-100" x2="80" y2="100" stroke="blue" stroke-width="1"/>
+  
+  <!-- Circle centered at origin -->
+  <circle cx="0" cy="0" r="80" fill="none" stroke="black" stroke-width="2"/>
+  
+  <!-- Points where tan(theta) = 0.6 -->
+  <!-- At approximately 0.540420 radians (31 degrees) and pi + 0.540420 radians (211 degrees) -->
+  <circle cx="68.4" cy="-41" r="4" fill="red"/>
+  <circle cx="-68.4" cy="41" r="4" fill="red"/>
+  
+  <!-- Label -->
+  <text x="85" y="-40">0.6</text>
+</svg>
